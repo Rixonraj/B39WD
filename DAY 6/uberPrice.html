@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function rideDetails (passengerName, distance, typeOfCar){
+            this.passengerName = passengerName;
+            this.distance = distance;
+            this.typeOfCar = typeOfCar;
+
+            this.cost = (typeOfCar == "SUV")? distance*20 : (typeOfCar == "Sedan")? distance*15 : (typeOfCar == "mini")? distance*12:(alert("Enter Type of Car"));
+        }
+
+        let uberRide1 = new rideDetails ("Rixon",10,"SUV")
+
+        console.log("uberRide1",uberRide1);
+    </script>
+</body>
+</html>
